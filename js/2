@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>文档对象</title>
+</head>
+<body>
+<input type="text" name="" id="t1"></div></br></br>
+<input type="text" name="" id="t2"></br></br>
+<input type="text" name="" id="t3"></br></br>
+<input type="button" name="" value="+" onclick="add()">
+<input type="button" name="" value="-" onclick="jian()">
+<input type="button" name="" value="x" onclick="chen()">
+<input type="button" name="" value="/" onclick="chu()">
+</body>
+</html>
+<script type="text/javascript">
+//function show(){
+//	var t1_value= document.getElementById("t1").value;
+//	alert(t1_value);
+//}
+function add(){
+	var t1_value= Number(document.getElementById("t1").value);
+	var t2_value= Number(document.getElementById("t2").value);
+	document.getElementById("t3").value=t1_value+t2_value;
+}
+function jian(){
+	var t1_value= Number(document.getElementById("t1").value);
+	var t2_value= Number(document.getElementById("t2").value);
+	document.getElementById("t3").value=t1_value-t2_value;
+}
+function chen(){
+	var t1_value= Number(document.getElementById("t1").value);
+	var t2_value= Number(document.getElementById("t2").value);
+	document.getElementById("t3").value=t1_value*t2_value;
+}
+function chu(){
+	var t1_value= Number(document.getElementById("t1").value);
+	var t2_value= Number(document.getElementById("t2").value);
+	document.getElementById("t3").value=t1_value/t2_value;
+}
+</script>
